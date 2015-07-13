@@ -1,0 +1,6 @@
+artifacts/
+node_modules/
+.vs/
+bin/
+project.lock.json
+npm-debug.log
