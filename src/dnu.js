@@ -40,7 +40,7 @@ function run(cmd, options) {
   var args = [];
   var command = commands();
   projects.forEach(function (project) {
-    if (windows) project = project.replace(/\//g, '\\');
+    if (windows) project = '"' + project.replace(/\//g, '\\') + '"';
     args.push(command(cmd, options, project).join(' '));
   });
 
